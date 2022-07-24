@@ -1,6 +1,7 @@
 FROM debian:bullseye-slim
 MAINTAINER Christian Raoulis "CRaoulis@gmail.com"
 
+RUN useradd -ms /bin/bash container
 USER container
 WORKDIR /home/container
 ENV USER=containter HOME=/home/container
